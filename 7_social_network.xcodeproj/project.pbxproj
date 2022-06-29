@@ -170,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				5CE9A5D3286A76B300636FFE /* managers */,
-				5CEECEE8286BC841009C6B14 /* FirebaseManager.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -186,6 +185,7 @@
 		5CE9A5D3286A76B300636FFE /* managers */ = {
 			isa = PBXGroup;
 			children = (
+				5CEECEE8286BC841009C6B14 /* FirebaseManager.swift */,
 			);
 			path = managers;
 			sourceTree = "<group>";
