@@ -29,6 +29,8 @@
 		5CEECEEB286BC8A6009C6B14 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECEEA286BC8A6009C6B14 /* User.swift */; };
 		5CEECEED286BCB15009C6B14 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECEEC286BCB15009C6B14 /* BaseModel.swift */; };
 		5CEECEF1286BCF3F009C6B14 /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECEF0286BCF3F009C6B14 /* EncodableExtension.swift */; };
+		5CEECEFB286BDB20009C6B14 /* PostsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEECEF9286BDB1F009C6B14 /* PostsListViewController.swift */; };
+		5CEECEFC286BDB20009C6B14 /* PostsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CEECEFA286BDB1F009C6B14 /* PostsListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		5CEECEEA286BC8A6009C6B14 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5CEECEEC286BCB15009C6B14 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		5CEECEF0286BCF3F009C6B14 /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		5CEECEF9286BDB1F009C6B14 /* PostsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListViewController.swift; sourceTree = "<group>"; };
+		5CEECEFA286BDB1F009C6B14 /* PostsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		5CE9A5CC286A763900636FFE /* posts */ = {
 			isa = PBXGroup;
 			children = (
+				5CEECEF4286BDAE0009C6B14 /* postsList */,
 			);
 			path = posts;
 			sourceTree = "<group>";
@@ -325,6 +330,39 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		5CEECEF4286BDAE0009C6B14 /* postsList */ = {
+			isa = PBXGroup;
+			children = (
+				5CEECEF8286BDB01009C6B14 /* viewModels */,
+				5CEECEF7286BDAFC009C6B14 /* controllers */,
+				5CEECEF6286BDAF7009C6B14 /* views */,
+			);
+			path = postsList;
+			sourceTree = "<group>";
+		};
+		5CEECEF6286BDAF7009C6B14 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		5CEECEF7286BDAFC009C6B14 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CEECEF9286BDB1F009C6B14 /* PostsListViewController.swift */,
+				5CEECEFA286BDB1F009C6B14 /* PostsListViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		5CEECEF8286BDB01009C6B14 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,6 +434,7 @@
 			files = (
 				5CEECEE7286BC829009C6B14 /* SignupViewController.xib in Resources */,
 				5CEECEE0286B8DC0009C6B14 /* LoginViewController.xib in Resources */,
+				5CEECEFC286BDB20009C6B14 /* PostsListViewController.xib in Resources */,
 				5CE9A5C3286A75E500636FFE /* LaunchScreen.storyboard in Resources */,
 				5CE9A5D8286A77DB00636FFE /* GoogleService-Info.plist in Resources */,
 				5CE9A5C0286A75E500636FFE /* Assets.xcassets in Resources */,
@@ -418,6 +457,7 @@
 				5CE9A5B4286A75E300636FFE /* AppDelegate.swift in Sources */,
 				5CEECEEB286BC8A6009C6B14 /* User.swift in Sources */,
 				5CE9A5B6286A75E300636FFE /* SceneDelegate.swift in Sources */,
+				5CEECEFB286BDB20009C6B14 /* PostsListViewController.swift in Sources */,
 				5CEECEDF286B8DC0009C6B14 /* LoginViewController.swift in Sources */,
 				5CE9A5BE286A75E300636FFE /* __social_network.xcdatamodeld in Sources */,
 			);
@@ -576,6 +616,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,6 +645,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
